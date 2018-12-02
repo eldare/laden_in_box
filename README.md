@@ -1,10 +1,11 @@
-<center>
-<img src="__2018__/screenshot.png" alt="screenshot">
-</center>
 # Bin Laden in a box
 An old project from 2002 - It's a tamagotchi, only this time the creature is bin laden.<br/>
 
 The code is so bad, but the nostalgia was too much, I had to share this :)
+
+<center>
+<img src="__2018__/screenshot.png" alt="screenshot">
+</center>
 
 ## Instructions
 
