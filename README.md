@@ -9,7 +9,11 @@ The code is so bad, but the nostalgia was too much, I had to share this :)
 <img src="__2018__/screenshot.png" alt="screenshot">
 </center>
 
-## Instructions
+## Running the game
+1. Download the binary [LADEN.EXE](https://github.com/eldare/laden_in_box/blob/master/__2018__/LADEN.EXE) - OR - Build it yourself, see instructions below.
+2. Run in [DOSBox](https://www.dosbox.com).
+
+## Instructions for building the project
 
 Step-by-step... Because it's annoying to Google stuff.
 
