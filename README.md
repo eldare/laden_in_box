@@ -28,7 +28,7 @@ Step-by-step... Because it's annoying to Google stuff.
 1. Open DOSBox, and execute `mount c ~/dosbox`, then `c:`
 2. Execute `TC201\FULL\INSTALL.EXE`
 3. Run `TC\TC.EXE`
-4. Change `Options -> Model` from `Small` to `Large`
+4. Change `Options -> Compiler -> Model` from `Small` to `Large`
 5. `File -> Load` the file `LADEN\LADEN.C`
 6. `Compile -> Make EXE file`
 7. ?
