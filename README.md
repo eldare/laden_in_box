@@ -19,7 +19,7 @@ Step-by-step... Because it's annoying to Google stuff.
 
 ### Preperation
 1. `mkdir ~/dosbox && cd "$_"`
-2. `git clone https://github.com/thedp/laden_in_box.git`
+2. `git clone https://github.com/eldare/laden_in_box.git`
 3. Download [Turbo C 2.01](http://cc.embarcadero.com/item/25636) to `~/dosbox/`
 4. Extract TC Disks to a single directory: `mkdir tc201/full ; cp -R tc201/Disk*/ tc201/full/`
 5. Install [DOSBox](https://www.dosbox.com)
