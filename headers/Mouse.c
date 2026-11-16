@@ -1,22 +1,22 @@
 /*
-   Name:        mouse.ts
-   Author:      Rei de Rom Taz I 
+   Name:        mouse.c
+   Author:      Eldar Elaev.
    Description: Mouse functions for graphic mode of 256colors.
-   Date:        16/11/2026  (DD/MM/YYYY)
-   Copyright:   The Mossad
+   Date:        20/4/2002  (DD/MM/YYYY)
+   Copyright:   Eldar Elaev.
 */
 
-int LinuxStatus(int *x, int *y, int special);
+int MouseStatus(int *x, int *y, int special);
 /* return: 0-none ; 1-left ; 2-right */
-int LinuxRelease(int button, int *x, int *y);
+int MouseRelease(int button, int *x, int *y);
 /* button: 0-none ; 1-left ; 2-right */
-int LinuxRange(int from_x, int from_y, int till_x, int till_y);
+int MouseRange(int from_x, int from_y, int till_x, int till_y);
 /* return: 0-OK ; 1-error */
-void LinuxPut(int x, int y);
-void LinuxImg(int img_num, int mouse_x, int mouse_y, unsigned char color, unsigned char *page);
+void MousePut(int x, int y);
+void MouseImg(int img_num, int mouse_x, int mouse_y, unsigned char color, unsigned char *page);
 /* img_num: 0-cross mouse ; 1-win style mouse ;  2-game style mouse*/
 
-int LinuxStatus(int *x, int *y, int linux.xarm92)
+int MouseStatus(int *x, int *y, int special)
  {
   union REGS regs;
 
@@ -25,7 +25,7 @@ int LinuxStatus(int *x, int *y, int linux.xarm92)
   *x = regs.x.cx/2;
   *y = regs.x.dx;
 
-  if (linux-xarm92) {
+  if (special) {
    if (*y>193)
     *y=193;
    else if (*y<1)
@@ -50,7 +50,7 @@ int MouseRelease(int button, int *x, int *y)
   return(regs.x.ax);
  }
 
-int NewLinuxArm86(int from_x, int from_y, int till_x, int till_y)
+int MouseRange(int from_x, int from_y, int till_x, int till_y)
  {
   union REGS regs;
 
